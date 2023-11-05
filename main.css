@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'rintin';
+    src: url('fonts/Roobert-Regular.otf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'rintin';
+    src: url('fonts/Roobert-SemiBold.otf');
+    font-weight: bold;
+}
+
+div{
+    margin-left: 0;
+    margin-right: 0;
+}
+html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white;
+    font-family: 'rintin', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+.main-container{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.main-container h1{
+    font-weight: bold;
+    font-size: 38px;
+}
+
+.text{
+    font-size: 20px;
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    width: fit-content;
+    padding: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+
+.image{
+    width: 400px;
+}
+
+.text-large{
+    font-size: 28px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.text-container{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-container{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 40px
+}
+
+.button-container a{
+    text-decoration: none;
+    color: white;
+    background-color: #25D366;
+    padding-left: 34px;
+    padding-right: 34px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 25px;
+    font-weight: bold;
+    width: 200px;
+}
+.button-container p{
+    text-align: center;
+}
+
+.button-container a:hover{
+    cursor: pointer;
+}
+
+#wa-icon{
+    width: 25px;
+    height: 25px;
+}
+.button{
+    display: flex;
+    justify-content:space-between; 
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px){
+    .main-container{
+        height: 900px;
+    }
+    .text-container h1{
+        font-size: 30px;
+    }
+    .text-large{
+        font-size: 24px;
+    }
+    .button-container{
+        width: 90%;
+        gap: 40px;
+    }
+    .button-container p{
+        font-size: 20px;
+    }
+    .button-container a p{
+        font-size: 16px;
+    }
+    .text-container{
+        width: 90%;
+    }
+
+    .image{
+        width: 250px;
+    }
+    .image-container{
+        padding: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
